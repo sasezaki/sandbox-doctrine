@@ -1,0 +1,7 @@
+{
+    "require": {
+        "doctrine/orm": "^2.7",
+        "roave/psr-container-doctrine": "^2.2",
+        "laminas/laminas-servicemanager": "^3.4"
+    }
+}
