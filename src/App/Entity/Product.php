@@ -26,6 +26,12 @@ class Product
      */
     private $name;
 
+    /**
+     * @var int
+     * @ORM\Column(type="integer", nullable=false)
+     */
+    private $price;
+
     public function getId() : int
     {
         return $this->id;
@@ -36,7 +42,7 @@ class Product
         return $this->name;
     }
 
-    public function setName($name)
+    public function setName(string $name) : void
     {
         $this->name = $name;
     }

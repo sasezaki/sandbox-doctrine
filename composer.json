@@ -1,5 +1,6 @@
 {
     "require": {
+        "php": "^7.4",
         "doctrine/orm": "^2.7",
         "roave/psr-container-doctrine": "^2.2",
         "laminas/laminas-servicemanager": "^3.4"
@@ -8,5 +9,9 @@
         "psr-4": {
             "App\\" : "src/App"
 	}
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.48",
+        "phpstan/phpstan-doctrine": "^0.12.20"
     }
 }
