@@ -1,9 +1,9 @@
 {
     "require": {
-        "php": "^7.4",
-        "doctrine/orm": "^2.7",
-        "roave/psr-container-doctrine": "^2.2",
-        "laminas/laminas-servicemanager": "^3.4"
+        "php": "~8.2",
+        "doctrine/orm": "^3",
+        "roave/psr-container-doctrine": "^5.1",
+        "laminas/laminas-servicemanager": "^3.21"
     },
     "autoload": {
         "psr-4": {
@@ -11,7 +11,7 @@
         }
     },
     "require-dev": {
-        "phpstan/phpstan": "^0.12.48",
-        "phpstan/phpstan-doctrine": "^0.12.20"
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-doctrine": "^1.3"
     }
 }
