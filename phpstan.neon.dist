@@ -4,6 +4,7 @@ parameters:
 		- src
 	doctrine:
 		objectManagerLoader: tests/object-manager.php
+		literalString: true
 	featureToggles:
 		bleedingEdge: true
 

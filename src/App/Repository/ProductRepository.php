@@ -14,10 +14,10 @@ class ProductRepository extends EntityRepository
     public function findA(string $userName) : void
     {
         // https://x.com/sasezaki/status/1804376637003473001
-//        $qb = $this->createQueryBuilder('p')
-//            ->where(
-//                "CONCAT(p.firstName, p.lastName) = {$userName}"
-//            );
+       $qb = $this->createQueryBuilder('p')
+           ->where(
+               "CONCAT(p.firstName, p.lastName) = {$userName}"
+           );
 
     }
 }
