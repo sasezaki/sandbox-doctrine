@@ -8,23 +8,23 @@ use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: \App\Repository\ProductRepository::class)]
 #[ORM\Table(name: "products")]
-class Product
+readonly class Product
 {
 
-    public function __construct(
-        #[ORM\Id]
-        #[ORM\Column(type: Types::INTEGER)]
-        #[ORM\GeneratedValue]
-        readonly public int $id,
+    #[ORM\Id]
+    #[ORM\Column(type: Types::INTEGER)]
+    #[ORM\GeneratedValue]
+    public int $id;
 
+    public function __construct(
         #[ORM\Column(type: Types::STRING, nullable: false)]
-        readonly public string $name,
+        public string $name,
 
         #[ORM\Column(type: Types::INTEGER, nullable: false)]
-        readonly public int $price,
+        public int $price,
 
         #[ORM\Column(type: Types::DATE_IMMUTABLE, nullable: false)]
-        readonly public \DateTimeImmutable $created,
+        public \DateTimeImmutable $created,
     )
     {
     }

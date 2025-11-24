@@ -16,6 +16,8 @@ create database doctrine_sandbox;
 ```
 
 ```shell
-./vendor/bin/doctrine orm:schema-tool:create
+./bin/doctrine orm:schema-tool:create
+
+./bin/doctrine orm:schema-tool:update --force
 ```
 

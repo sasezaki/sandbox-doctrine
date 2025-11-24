@@ -23,12 +23,17 @@ return [
                 'class' => \Doctrine\ORM\Mapping\Driver\AttributeDriver::class,
                 'drivers' => [
                     'App\\Entity' => 'app_entity',
-                ]
+                ],
+                'paths' => [
+                    __DIR__ . '/../src/App/Entity'
+                ],
             ],
             'app_entity' => [
                 'class' => \Doctrine\ORM\Mapping\Driver\AttributeDriver::class,
                 // 'cache' => 'filesystem',
-                'paths' => __DIR__ . '/../src/App/Entity',
+                'paths' => [
+                    __DIR__ . '/../src/App/Entity'
+                ],
             ],
         ],
 //         'cache' => [
