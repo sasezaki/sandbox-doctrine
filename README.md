@@ -13,6 +13,8 @@ mysql -u root -p --host 127.0.0.1
 
 ```sql
 create database doctrine_sandbox;
+-- use doctrine_sandbox;
+-- show tables;
 ```
 
 ```shell
@@ -20,4 +22,3 @@ create database doctrine_sandbox;
 
 ./bin/doctrine orm:schema-tool:update --force
 ```
-
